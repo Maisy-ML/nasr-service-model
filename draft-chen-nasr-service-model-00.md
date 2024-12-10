@@ -63,9 +63,9 @@ The security environment here refers to the security of logical nodes.
 
 Node Type: NFV or Hardware.
 
-Path: Authentication, Encryption
+Path: Authentication, Encryption.(RFC8049)
 
-Connection: Maximal occupancy level, Isolation, Diversity
+Connection: Maximal occupancy level, Isolation, Diversity.(RFC9543)
 
 Security service type: firewall,DPI/IPS,attack-mitigation(anti-DDos),WAF. Including Processing latency and performance of security capabilities.
 
