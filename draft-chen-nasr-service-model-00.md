@@ -69,7 +69,7 @@ Path: selected router ID list or IP list on Path, it's optional.
 
 Data sevice type: used to indicate the type of data, such as games or videos, it's mandatory attribute.
 
-Geographic: used to indicate users' requirements for geographic location or restrictions, it's optional;
+Geographic: used to indicate users' requirements for geographic location or restrictions, a customer may request certain geographic limits are applied to how the provider routes traffic for the network forwarding, due to policy reasons or security considerations, For example, some countries have regulations that explicitly prohibit data from leaving the country.It's optional attribute;
 
 ### Security environment
 
@@ -77,9 +77,9 @@ NASR is to route data on top of trusted devices, trusted operating environments,
 
 The security environment here refers to the security of logical nodes.
 
-Node Type: NFV or Hardware.
+Node Type: NFV or Hardware, this field is used to identify whether the node is of hardware type or virtualization software type.
 
-Path: Authentication, Encryption.<RFC 8049>
+Path: Authentication, Encryption. For the L2 layer, authentication may be based on the device's MAC address, and encryption occurs at the data link layer, such as MACsec; For the L3 layer, it may be whether end-to-end authentication and encryption is provided. 
 
 Connection: Maximal occupancy level, Isolation, Diversity.<RFC 9543>
 
