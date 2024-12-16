@@ -41,6 +41,22 @@ The NASR goal is to allow clients to choose desired security attributes of his r
 
 The service model help users to describe their desired security attributes, after receiving the service model, the network service provider converts the requirements of service model into executable configurations, the network completes the preparation work before network transmission according to the configurations. Until the completion of the network service, the ISP feedback the service results to the user, which will be used as evidence of service satisfaction.
 
+The security services here refers to the resources that can be provided during connection, it should be noted that the security services at the application layer is out of scope.
+
+# Abbreviations
+
+The following abbreviations are used in this document.
+
+NVF: Network Functions Virtualization.
+
+IDS: Intrusion Detection System.
+
+IPS: Intrusion Prevention System.
+
+PoT: Proof of Transit.
+
+SLA: Service Level Expectation.
+
 # NASR service model
 
 ## Service model from user
@@ -57,17 +73,17 @@ Geographic: used to indicate users' requirements for geographic location or rest
 
 ### Security environment
 
-NASR is to route data on top of trusted devices, trusted operating environments, trusted links and trusted services only, therefore, users can have security requirements for each node in the path, including software and hardware.
+NASR is to route data on top of trusted devices, trusted operating environments, trusted links and trusted services only, therefore, users can have security requirements for each node in the path, including software and hardware. 
 
 The security environment here refers to the security of logical nodes.
 
 Node Type: NFV or Hardware.
 
-Path: Authentication, Encryption.(RFC8049)
+Path: Authentication, Encryption.<RFC 8049>
 
-Connection: Maximal occupancy level, Isolation, Diversity.(RFC9543)
+Connection: Maximal occupancy level, Isolation, Diversity.<RFC 9543>
 
-Security service type: firewall,DPI/IPS,attack-mitigation(anti-DDos),WAF. Including Processing latency and performance of security capabilities.
+Security service type: Access control, Integrity Protection, firewall,IDS/IPS,attack-mitigation(anti-DDos) and so on. Each type of security service requires two SLE parameters, processing latency and performance of security capabilities.
 
 Defense perception: self defense perception, responsible for dynamically discovering security issues caused by self defects and external attacks.
 
