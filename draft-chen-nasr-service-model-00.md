@@ -31,15 +31,15 @@ author:
 
 --- abstract
 
-This document describes the service model of Network Attestation for Secure Routing(NASR). Operators offer security capabilities that can be added to the connectivity service, and clients make choices.
+This document describes the service model of Network Attestation for Secure Routing (NASR). It lists security capabilities and characteristics of connectivity services that operators can offer and clients can choose from.
 
 --- middle
 
 # Introduction
 
-The NASR goal is to allow clients to choose desired security attributes of his received network service, then achieve dependable forwarding by routing on top of only devices that satisfies certain trust requirements, finally prove to the clients that certain packets or flows traversed a network path that has certain trust or security properties.
+The NASR goal is to allow clients to choose desired security attributes of his received network service, achieving dependable forwarding by routing on top of only devices that satisfies certain security requirements. NASR then provides proof that packets or flows have traversed a network path with defined security properties.
 
-The service model help users to describe their desired security attributes, after receiving the service model, the network service provider converts the requirements of service model into executable configurations, the network completes the preparation work before network transmission according to the configurations. Until the completion of the network service, the ISP feedback the service results to the user, which will be used as evidence of service satisfaction.
+The service model enables users to specify their security requirements. The network service provider translates these requirements into network configurations, which are then used to prepare the network for transmission. After delivering the service, the provider returns proof of compliance to the user.
 
 The security services here refers to the resources that can be provided during connection, it should be noted that the security services at the application layer is out of scope.
 
