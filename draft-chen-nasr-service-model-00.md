@@ -63,30 +63,33 @@ SLA: Service Level Expectation.
 
 ### Destination
 
-Destination: Used to indicate the destination of the visit, such as IP,FQDN or URL, it's mandatory attribute.  
+Destination: Used to indicate the destination of the visit, such as IP,FQDN or URL.  
 
-Path: selected router ID list or IP list on Path, it's optional.
+Path: selected router ID list or IP list on Path.
 
-Data sevice type: used to indicate the type of data, such as games or videos, it's mandatory attribute.
+Data sevice type: used to indicate the type of data, such as eMBB data, mMTC data or uRLLC data.
 
-Geographic: used to indicate users' requirements for geographic location or restrictions, a customer may request certain geographic limits are applied to how the provider routes traffic for the network forwarding, due to policy reasons or security considerations, For example, some countries have regulations that explicitly prohibit data from leaving the country.It's optional attribute;
+Geographic: used to indicate users' requirements for geographic location or restrictions, a customer may request certain geographic limits are applied to how the provider routes traffic for the network forwarding, due to policy reasons or security considerations, For example, some countries have regulations that explicitly prohibit data from leaving the country.
 
-### Security environment
+### Trusted Path Provision
 
-NASR is to route data on top of trusted devices, trusted operating environments, trusted links and trusted services only, therefore, users can have security requirements for each node in the path, including software and hardware. 
+ISPs can provide secure routing service by selecting a trusted path for users, including choosing trusted routers that can provide the security services required by the user;
 
-The security environment here refers to the security of logical nodes.
+The trusted path provision includes but is not limited to the following parameters.
 
 Node Type: NFV or Hardware, this field is used to identify whether the node is of hardware type or virtualization software type.
 
-Path: Authentication, Encryption. For the L2 layer, authentication may be based on the device's MAC address, and encryption occurs at the data link layer, such as MACsec; For the L3 layer, it may be whether end-to-end authentication and encryption is provided. 
+Node Security Configuration: the node's basic security configuration baseline possessed by the router itself, include security hardening, attack perception and so on. 
 
-Connection: Maximal occupancy level, Isolation, Diversity.<RFC 9543>
+L2/L3 Security Feature: used to identify whether to enable authentication and encryption on L2 or L3. L2 authentication can based on the device's MAC address and encryption can use MACsec; L3 can provide end-to-end authentication and encryption, such as VPN. 
 
-Security service type: Access control, Integrity Protection, firewall,IDS/IPS,attack-mitigation(anti-DDos) and so on. Each type of security service requires two SLE parameters, processing latency and performance of security capabilities.
+Connection Reliability Feature: Maximal occupancy level, Isolation, Diversity.<RFC 9543>. The maximal occupancy level specifies the number of flows to be admitted and optionally a maximum number of countable resource units (e.g., IP or MAC addresses). Isolation refers to the division of traffic , a customer may request that its traffic is isolated from the other network traffic supported by the same provider. Diversity allows connections based on different underlying network constructions.
 
-Defense perception: self defense perception, responsible for dynamically discovering security issues caused by self defects and external attacks.
+Security Services Configuration: Security services that can be provided based on traffic, such as firewall,IDS/IPS,attack-mitigation(anti-DDos), access control, Integrity Protection. Each type of security service requires two SLE parameters, processing latency and performance of security capabilities.
 
+## service model to user
+
+When users are very proficient in security configuration and requirements, they can directly fill in a fixed format list, the operator can provide feedback on whether the requirements are met; Users may not be security experts, they will propose vague security requirements, and the ISP generates one or more fixed format lists for users to choose from, there is an additional interaction process with the user here.
 
 ## Service result model to user
 
