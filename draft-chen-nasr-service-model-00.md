@@ -41,8 +41,6 @@ The NASR goal is to allow clients to choose desired security attributes of his r
 
 The service model enables users to specify their security requirements. The network service provider translates these requirements into network configurations, which are then used to prepare the network for transmission. After delivering the service, the provider returns proof of compliance to the user.
 
-The security services here refers to the resources that can be provided during connection, it should be noted that the security services at the application layer is out of scope.
-
 # Abbreviations
 
 The following abbreviations are used in this document.
