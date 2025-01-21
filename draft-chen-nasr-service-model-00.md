@@ -31,7 +31,7 @@ author:
 
 --- abstract
 
-This document describes the service model of Network Attestation for Secure Routing (NASR). It lists security capabilities and characteristics of connectivity services that operators can offer and clients can choose from.
+This document describes the service model of Network Attestation for Secure foRwarding (NASR). It lists security capabilities and characteristics of connectivity services that operators can offer and clients can choose from.
 
 --- middle
 
@@ -71,13 +71,13 @@ Geographic: used to indicate users' requirements for geographic location or rest
 
 ### Trusted Path Provision
 
-ISPs can provide secure routing service by selecting a trusted path for users, including choosing trusted routers that can provide the security services required by the user;
+ISPs can provide secure forwarding service by selecting a trusted path for users, including choosing trusted routers that can provide the security services required by the user;
 
 The trusted path provision includes but is not limited to the following parameters.
 
-Node Type: NFV or Hardware, this field is used to identify whether the node is of hardware type or virtualization software type.
+Node Type: NFV or Hardware, this field is used to identify whether the node is of hardware type or virtualization software type, different node type have different security configurations.
 
-Node Security Configuration: the node's basic security configuration baseline possessed by the router itself, include security hardening, attack perception and so on. 
+Node Security Configuration: the node's basic security configuration baseline possessed by the node(such as router) itself, include security hardening, attack perception and so on. 
 
 L2/L3 Security Feature: used to identify whether to enable authentication and encryption on L2 or L3. L2 authentication can based on the device's MAC address and encryption can use MACsec; L3 can provide end-to-end authentication and encryption, such as VPN. 
 
