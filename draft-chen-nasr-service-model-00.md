@@ -93,7 +93,9 @@ When users are very proficient in security configuration and requirements, they 
 
 Path attestation result: after generating a path that meets the specific forwarding requirements of the user, it is used to record the initial path attestation result as a baseline for future verification, contains at least four fields: Identity, initial attestation result, verification reference and auxillary information.
 						
-Forwarding Path validation result: formed during the actual forwarding process both in-situ and out-of-band modes, it will be verified with path attestation result,  contains at least two fields: Identity, PoTs.
+Forwarding Path validation result: formed during the actual forwarding process both in-situ and out-of-band modes, it will be verified with path attestation result,  contains at least two fields: Identity, attestation results.
+
+Service provision result: as security services can be provided, after the service is provided, need to provide service proof to the user, contains at least two fields: Identity, Service type,  Service details.
 
 # IANA Considerations {#IANA}
 
