@@ -1,1 +1,1 @@
-# nasr-service-model
+This document describes the service model of Network Attestation for Secure Routing (NASR). It lists security capabilities and characteristics of connectivity services that operators can offer and clients can choose from.# nasr-service-model
