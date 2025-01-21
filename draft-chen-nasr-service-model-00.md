@@ -61,11 +61,11 @@ SLA: Service Level Expectation.
 
 ### Destination
 
-Destination: Used to indicate the destination of the visit, such as IP,FQDN or URL.  
+Destination: Used to indicate the destination of the visit, such as IP.  
 
 Path: selected router ID list or IP list on Path.
 
-Data sevice type: used to indicate the type of data, such as eMBB data, mMTC data or uRLLC data.
+Sevice type: used to indicate the type of data, such as eMBB data, mMTC data or uRLLC data.
 
 Geographic: used to indicate users' requirements for geographic location or restrictions, a customer may request certain geographic limits are applied to how the provider routes traffic for the network forwarding, due to policy reasons or security considerations, For example, some countries have regulations that explicitly prohibit data from leaving the country.
 
@@ -94,8 +94,6 @@ When users are very proficient in security configuration and requirements, they 
 Path attestation result: after generating a path that meets the specific forwarding requirements of the user, it is used to record the initial path attestation result as a baseline for future verification, contains at least four fields: Identity, initial attestation result, verification reference and auxillary information.
 						
 Forwarding Path validation result: formed during the actual forwarding process both in-situ and out-of-band modes, it will be verified with path attestation result,  contains at least two fields: Identity, PoTs.
-
-PoT tag: used to flag the currently used PoT algorithm.
 
 # IANA Considerations {#IANA}
 
